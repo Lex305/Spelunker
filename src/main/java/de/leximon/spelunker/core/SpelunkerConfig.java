@@ -150,14 +150,14 @@ public class SpelunkerConfig {
             HjsonList list = obj.addList("block-configs");
             list.setComment("""
                     The configuration for the given blocks
-                    
+
                     highlightColor:
                         Specifies the color with which the block will be outlined
                         You can also use values like "red, dark_red, blue, aqua"
-                    
+
                     transition:
                         Determines whether an ease-out animation should be played when approaching a block
-                        
+
                     effectRadius:
                         How many blocks the effect should range, a higher value than 32 is not recommended
                         Must be greater or equal to 1
@@ -294,31 +294,236 @@ public class SpelunkerConfig {
 
     static {
         // Coal
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:coal_ore", "minecraft:deepslate_coal_ore"}, new ChunkBlockConfig(0x505050, true, 16));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:coal_ore",
+                "minecraft:deepslate_coal_ore",
+                "universal_ores:andesite_coal_ore",
+                "universal_ores:calcite_coal_ore",
+                "universal_ores:diorite_coal_ore",
+                "universal_ores:granite_coal_ore",
+                "universal_ores:tuff_coal_ore"
+            }, new ChunkBlockConfig(0x505050, true, 16)
+        );
 
         // Iron
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:iron_ore", "minecraft:deepslate_iron_ore"}, new ChunkBlockConfig(0xffd1bd, true, 8));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:iron_ore",
+                "minecraft:deepslate_iron_ore",
+                "universal_ores:andesite_iron_ore",
+                "universal_ores:calcite_iron_ore",
+                "universal_ores:diorite_iron_ore",
+                "universal_ores:granite_iron_ore",
+                "universal_ores:tuff_iron_ore"
+            }, new ChunkBlockConfig(0xffd1bd, true, 8)
+        );
 
         // Copper
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:copper_ore", "minecraft:deepslate_copper_ore"}, new ChunkBlockConfig(0xeb5e34, true, 12));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:copper_ore",
+                "minecraft:deepslate_copper_ore",
+                "universal_ores:andesite_copper_ore",
+                "universal_ores:calcite_copper_ore",
+                "universal_ores:diorite_copper_ore",
+                "universal_ores:granite_copper_ore",
+                "universal_ores:tuff_copper_ore"
+            }, new ChunkBlockConfig(0xeb5e34, true, 12)
+        );
 
         // Gold
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:gold_ore", "minecraft:deepslate_gold_ore", "minecraft:nether_gold_ore"}, new ChunkBlockConfig(0xfff52e, true, 8));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:gold_ore",
+                "minecraft:deepslate_gold_ore",
+                "minecraft:nether_gold_ore",
+                "universal_ores:andesite_gold_ore",
+                "universal_ores:basalt_gold_ore",
+                "universal_ores:blackstone_gold_ore",
+                "universal_ores:calcite_gold_ore",
+                "universal_ores:diorite_gold_ore",
+                "universal_ores:granite_gold_ore",
+                "universal_ores:tuff_gold_ore",
+                "mythicmetals:midas_gold_ore"
+            }, new ChunkBlockConfig(0xfff52e, true, 8)
+        );
 
         // Diamond
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:diamond_ore", "minecraft:deepslate_diamond_ore"}, new ChunkBlockConfig(0x2ee0ff, true, 5));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:diamond_ore",
+                "minecraft:deepslate_diamond_ore",
+                "universal_ores:andesite_diamond_ore",
+                "universal_ores:calcite_diamond_ore",
+                "universal_ores:diorite_diamond_ore",
+                "universal_ores:granite_diamond_ore",
+                "universal_ores:tuff_diamond_ore"
+            }, new ChunkBlockConfig(0x2ee0ff, true, 6)
+        );
 
         // Emerald
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:emerald_ore", "minecraft:deepslate_emerald_ore"}, new ChunkBlockConfig(0x2eff35, true, 7));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:emerald_ore",
+                "minecraft:deepslate_emerald_ore",
+                "universal_ores:andesite_emerald_ore",
+                "universal_ores:calcite_emerald_ore",
+                "universal_ores:diorite_emerald_ore",
+                "universal_ores:granite_emerald_ore",
+                "universal_ores:tuff_emerald_ore"
+            }, new ChunkBlockConfig(0x2eff35, true, 8)
+        );
 
         // Lapis
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:lapis_ore", "minecraft:deepslate_lapis_ore"}, new ChunkBlockConfig(0x312eff, true, 8));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:lapis_ore",
+                "minecraft:deepslate_lapis_ore",
+                "universal_ores:andesite_lapis_ore",
+                "universal_ores:calcite_lapis_ore",
+                "universal_ores:diorite_lapis_ore",
+                "universal_ores:granite_lapis_ore",
+                "universal_ores:tuff_lapis_ore",
+                "betternether:nether_lapis_ore"
+            }, new ChunkBlockConfig(0x312eff, true, 8)
+        );
 
         // Redstone
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:redstone_ore", "minecraft:deepslate_redstone_ore"}, new ChunkBlockConfig(0xff2e2e, true, 8));
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:redstone_ore",
+                "minecraft:deepslate_redstone_ore",
+                "universal_ores:andesite_redstone_ore",
+                "universal_ores:calcite_redstone_ore",
+                "universal_ores:diorite_redstone_ore",
+                "universal_ores:granite_redstone_ore",
+                "universal_ores:tuff_redstone_ore",
+                "betternether:nether_redstone_ore"
+            }, new ChunkBlockConfig(0xff2e2e, true, 8)
+        );
 
-        // Quartz
-        DEFAULT_BLOCK_CONFIGS.put(new String[] {"minecraft:nether_quartz_ore"}, new ChunkBlockConfig(0xffffff, true, 14));
+        // Nether Quartz
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{
+                "minecraft:nether_quartz_ore",
+                "universal_ores:basalt_quartz_ore",
+                "universal_ores:blackstone_quartz_ore"
+            }, new ChunkBlockConfig(0xece6da, true, 14)
+        );
+
+        // Netherite
+        DEFAULT_BLOCK_CONFIGS.put(new String[]{"minecraft:ancient_debris"}, new ChunkBlockConfig(0x2e2e2e, true, 4));
+
+
+        // MODDED:
+        DEFAULT_BLOCK_CONFIGS.put(
+            new String[]{"create:zinc_ore", "create:deepslate_zinc_ore"}, new ChunkBlockConfig(0x92a6a6, true, 8)
+        );
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:aquarium_ore"}, new ChunkBlockConfig(0x5f8fa4, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:adamantite_ore", "mythicmetals:deepslate_adamantite_ore"}, new ChunkBlockConfig(0x7b1920, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"betterend:amber_ore"}, new ChunkBlockConfig(0xc68c07, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicupgrades:ametrine_ore"}, new ChunkBlockConfig(0xaa4fc5, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:banglum_ore", "mythicmetals:nether_banglum_ore"}, new ChunkBlockConfig(0x5c3520, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:bauxite_ore", "techreborn:deepslate_bauxite_ore"}, new ChunkBlockConfig(0x856551, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"abstoneedition:bismuth_ore"}, new ChunkBlockConfig(0x285f72, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:blackstone_stormyx_ore", "mythicmetals:stormyx_ore"}, new ChunkBlockConfig(0x902b96, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:calcite_kyber_ore"}, new ChunkBlockConfig(0x9c63a9, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:calcite_starrite_ore", "mythicmetals:starrite_ore"}, new ChunkBlockConfig(0xa24995, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:carmot_ore", "mythicmetals:deepslate_carmot_ore"}, new ChunkBlockConfig(0x6b083d, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"betternether:cincinnasite_ore", "techreborn:cinnabar_ore"}, new ChunkBlockConfig(0x957f42, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:deepslate_galena_ore"}, new ChunkBlockConfig(0x79727d, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:deepslate_iridium_ore"}, new ChunkBlockConfig(0x798783, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicupgrades:deepslate_jade_ore", "mythicupgrades:jade_ore"}, new ChunkBlockConfig(0x9cbb1d, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:lead_ore", "techreborn:deepslate_lead_ore", "indrev:lead_ore", "indrev:deepslate_lead_ore"}, new ChunkBlockConfig(0x7c7b7f, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:deepslate_morkite_ore", "mythicmetals:morkite_ore"}, new ChunkBlockConfig(0x4b96af, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:deepslate_mythril_ore", "mythicmetals:mythril_ore"}, new ChunkBlockConfig(0x3b7282, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"indrev:deepslate_nikolite_ore"}, new ChunkBlockConfig(0x006750, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:orichalcum_ore", "mythicmetals:deepslate_orichalcum_ore", "mythicmetals:smooth_basalt_orichalcum_ore", "mythicmetals:tuff_orichalcum_ore"}, new ChunkBlockConfig(0x58995d, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:peridot_ore", "techreborn:deepslate_peridot_ore"}, new ChunkBlockConfig(0x648632, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:prometheum_ore", "mythicmetals:deepslate_prometheum_ore"}, new ChunkBlockConfig(0x739e29, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:ruby_ore", "techreborn:deepslate_ruby_ore", "mythicupgrades:ruby_ore", "mythicupgrades:deepslate_ruby_ore", "betternether:nether_ruby_ore"}, new ChunkBlockConfig(0x631420, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:runite_ore", "mythicmetals:deepslate_runite_ore"}, new ChunkBlockConfig(0x2f5379, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"expandeddelight:salt_ore", "expandeddelight:deepslate_salt_ore", "croptopia:salt_ore", "fab:salt_ore"}, new ChunkBlockConfig(0xb9b997, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicupgrades:sapphire_ore", "mythicupgrades:deepslate_sapphire_ore", "techreborn:sapphire_ore", "techreborn:deepslate_sapphire_ore"}, new ChunkBlockConfig(0x4a6aa7, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:sheldonite_ore", "techreborn:deepslate_sheldonite_ore"}, new ChunkBlockConfig(0x6a7a85, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"clutter:silver_ore", "clutter:deepslate_silver_ore", "indrev:silver_ore", "indrev:deepslate_silver_ore", "techreborn:deepslate_silver_ore", "techreborn:silver_ore", "abstoneedition:silver_ore", "mythicmetals:silver_ore"}, new ChunkBlockConfig(0x728681, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:sodalite_ore", "techreborn:deepslate_sodalite_ore"}, new ChunkBlockConfig(0x374160, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:tin_ore", "techreborn:deepslate_tin_ore", "indrev:tin_ore", "indrev:deepslate_tin_ore", "mythicmetals:tin_ore"}, new ChunkBlockConfig(0xbfbfbd, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicupgrades:topaz_ore", "mythicupgrades:deepslate_topaz_ore"}, new ChunkBlockConfig(0xbd6d24, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"indrev:tungsten_ore", "indrev:deepslate_tungsten_ore"}, new ChunkBlockConfig(0x6e7173, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:tungsten_ore", "techreborn:deepslate_tungsten_ore"}, new ChunkBlockConfig(0x4e513b, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:deepslate_unobtainium_ore"}, new ChunkBlockConfig(0x2b3245, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:end_stone_starrite_ore"}, new ChunkBlockConfig(0xbf64b5, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"betterend:ender_ore"}, new ChunkBlockConfig(0x3a7665, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:galena_ore"}, new ChunkBlockConfig(0x9d97a2, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:iridium_ore"}, new ChunkBlockConfig(0x81928e, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:kyber_ore"}, new ChunkBlockConfig(0x7a4c8c, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:manganese_ore"}, new ChunkBlockConfig(0xc995ad, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"soulsweapons:moonstone_ore", "soulsweapons:moonstone_ore_deepslate"}, new ChunkBlockConfig(0x937fb0, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"indrev:nikolite_ore"}, new ChunkBlockConfig(0x00644f, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:osmium_ore"}, new ChunkBlockConfig(0x7286a1, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:palladium_ore"}, new ChunkBlockConfig(0xa7470e, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:platinum_ore"}, new ChunkBlockConfig(0x9275af, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:pyrite_ore"}, new ChunkBlockConfig(0xc9c27c, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:quadrillum_ore"}, new ChunkBlockConfig(0x292b2e, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"techreborn:sphalerite_ore"}, new ChunkBlockConfig(0x88916a, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"betterend:thallasium_ore"}, new ChunkBlockConfig(0x66a7a8, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"mythicmetals:unobtainium_ore"}, new ChunkBlockConfig(0x606a80, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"abstoneedition:uranium_ore"}, new ChunkBlockConfig(0x1dc90d, true, 12));
+
+        DEFAULT_BLOCK_CONFIGS.put(new String[] {"soulsweapons:verglas_ore", "soulsweapons:verglas_ore_deepslate"}, new ChunkBlockConfig(0xaec2c3, true, 12));
     }
 
     public static class ChunkBlockConfig {

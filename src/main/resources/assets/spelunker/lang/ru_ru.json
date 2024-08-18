@@ -1,0 +1,12 @@
+{
+    "effect.spelunker.spelunker": "Шахтёр",
+    "item.spelunker.amethyst_dust": "Аметистовая пыль",
+    "item.minecraft.potion.effect.spelunker": "Зелье шахтёра",
+    "item.minecraft.potion.effect.long_spelunker": "Зелье шахтёра",
+    "item.minecraft.splash_potion.effect.spelunker": "Взрывное зелье шахтёра",
+    "item.minecraft.splash_potion.effect.long_spelunker": "Взрывное зелье шахтёра",
+    "item.minecraft.lingering_potion.effect.spelunker": "Туманное зелье шахтёра",
+    "item.minecraft.lingering_potion.effect.long_spelunker": "Туманное зелье шахтёра",
+    "item.minecraft.tipped_arrow.effect.spelunker": "Стрела шахтёра",
+    "item.minecraft.tipped_arrow.effect.long_spelunker": "Стрела шахтёра"
+}
